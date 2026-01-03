@@ -13,7 +13,7 @@ const linkClass =(id)=> `hover:text-white transition cursor-pointer ${
   return (
     <>
       <header className="sticky top-0 z-50 backdrop-blur border-b border-muted/20">
-        <nav className="flex justify-between items-center  px-6 md:px-16 py-4">
+        <nav className="flex gap-5 justify-between items-center px-6 md:px-16 text-sm sm:text-base py-4">
           <a href="#home" className={`font-semibold text-accent hover:text-white tracking-wider`}>&lt;/&gt;</a>
           <ul className="flex gap-8 text-md">
             {sections.slice(1).map((id)=>(
