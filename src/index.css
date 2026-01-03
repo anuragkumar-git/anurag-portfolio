@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* ===== Custom Theme (v4 way) ===== */
+@theme {
+  --color-bg: #020617;
+  --color-panel: #020617cc;
+  --color-accent: #38bdf8;
+  --color-muted: #94a3b8;
+
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* ===== Base Styles ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: white;
+    font-family: var(--font-mono);
+  }
+}
