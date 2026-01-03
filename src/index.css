@@ -22,3 +22,35 @@
     font-family: var(--font-mono);
   }
 }
+
+@layer utilities{
+  .reveal{
+    opacity: 0;
+    transform: translateY(24px);
+    transition: all 0.7s ease;
+  }
+
+  .reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components{
+  .tech-badge{
+    background-color: #94a3b826;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.375rem;
+    font-family: monospace;
+    white-space: nowrap;
+  };
+  .tech-badge:hover{
+    background-color: rgba(148, 163, 184, 0.25);
+  }
+}

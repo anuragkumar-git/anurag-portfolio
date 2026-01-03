@@ -1,10 +1,12 @@
-function App() {
+import React from "react";
+import Home from "./sections/Home";
+import Background from "./components/Background";
+
+export default function App() {
   return (
     <>
-      <div className="text-center">Project Setup</div>
-      <img src="/editgit-profilePic.png" alt="ppimg" className="rounded-full"/>
+      <Background />
+      <Home />
     </>
   );
 }
-
-export default App;
