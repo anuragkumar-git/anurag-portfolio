@@ -5,11 +5,15 @@ export default function Background() {
         pointer-events-none
         overflow-hidden"
     >
-      {/* Large soft glow */}
-      <div className="absolute top-1/4 left-1/4 w-[40rem] h-[40rem] bg-accent/10 rounded-full blur-3xl" />
+      {/* Orbit 1 */}
+      <div className="absolute inset-0 flex items-center justify-center animate-[orbit_60s_linear_infinite]">
+        <div className="w-[40rem] h-[40rem] bg-accent/15 rounded-full blur-3xl translate-x-[12rem]" />
+      </div>
 
-      {/* Secondary glow */}
-      <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-accent/5 rounded-full blur-3xl" />
+      {/* Orbit 2 */}
+      <div className="absolute inset-0 flex items-center justify-center animate-[orbit_90s_linear_infinite]">
+        <div className="w-[30rem] h-[30rem] bg-accent/10 rounded-full blur-3xl translate-x-[15rem]" />
+      </div>
     </div>
   );
 }

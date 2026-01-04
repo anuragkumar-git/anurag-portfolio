@@ -4,19 +4,36 @@ export default function ProjectModel({ project, onClose }) {
   if (!project) return null;
 
   useEffect(() => {
-    const handleKwyDown = (e) => {
+    const handleKeyDown = (e) => {
       if (e.key === "Escape") {
         onClose();
       }
     };
-    window.addEventListener("keydown", handleKwyDown);
-    return () => window.removeEventListener("keydown", handleKwyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
 
+  useEffect(() => {
+    const original = document.body.style.overflow;
+    // console.info("Modal mounted → lock scroll");
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      // console.info("Modal unmounted → unlock scroll");
+      document.body.style.overflow = original;
+    };
+  }, []);
+
   return (
-    <div className="max-h-[90vh] overflow-y-auto">
-      <div className="fixed inset-0 z-50 backdrop-blur flex items-center justify-center px-4">
-        <div className="bg-panel/80 max-w-2xl w-full rounded-lg p-6 relative">
+    <>
+      <div
+        className="fixed inset-0 z-0 backdrop-blur-sm flex  justify-center px-4"
+        onClick={onClose}
+      >
+        <div
+          className="bg-panel/80 max-w-2xl w-full rounded-lg p-6 relative max-h-[90vh] overflow-y-auto no-scrollbar"
+          onClick={(e) => e.stopPropagation()}
+        >
           <button onClick={onClose} className="absolute top-4 right-4 text-xl">
             ✕
           </button>
@@ -72,6 +89,6 @@ export default function ProjectModel({ project, onClose }) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

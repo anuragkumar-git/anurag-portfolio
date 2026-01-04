@@ -18,15 +18,15 @@ export default function About() {
         <div className="space-y-8">
           {/* Summary */}
           <div>
-            {/* <h3 className="text-xl font-semibold mb-2">
-              Profile
-            </h3> */}
             <p className="text-muted leading-relaxed">
               A Computer Engineering Graduate (2025) learning backend
-              development with the MERN stack through hands-on projects.<br/>Gained
-              practical exposure to REST APIs, authentication, and
-              database-driven applications through project- based learning.<br/>
-              Familiar with the complete development lifecycle from planning and documentation to development.
+              development with the MERN stack through hands-on projects.
+              <br />
+              Gained practical exposure to REST APIs, authentication, and
+              database-driven applications through project- based learning.
+              <br />
+              Familiar with the complete development lifecycle from planning and
+              documentation to development.
             </p>
           </div>
 
@@ -47,9 +47,11 @@ export default function About() {
 
           <div className="space-y-4">
             <div>
-              <p className="font-medium mb-2">Languages</p>
+              <p className="font-medium mb-2 tracking-tight">
+                Languages & Tools
+              </p>
               <div className="flex flex-wrap gap-2">
-                {["JavaScript", "HTML5", "CSS3"].map((s) => (
+                {["JavaScript", "Git", "Postman"].map((s) => (
                   <span key={s} className="tech-badge">
                     {s}
                   </span>
@@ -58,44 +60,36 @@ export default function About() {
             </div>
 
             <div>
-              <p className="font-medium mb-2">Frontend</p>
-              <div className="flex flex-wrap gap-2">
-                {["React.js", "Tailwind CSS", "Bootstrap"].map((s) => (
-                  <span key={s} className="tech-badge">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <p className="font-medium mb-2">Backend</p>
-              <div className="flex flex-wrap gap-2">
-                {["Node.js", "Express.js", "MongoDB"].map((s) => (
-                  <span key={s} className="tech-badge">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <p className="font-medium mb-2">Tools & Concepts</p>
+              <p className="font-medium mb-2 tracking-tight">
+                Frameworks & Libraries
+              </p>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Git",
-                  "GitHub",
-                  "Postman",
-                  "Cloudinary",
-                  "JWT",
-                  "Google OAuth",
-                  "REST APIs",
-                  "MVC Architecture",
+                  "React.js",
+                  "Node.js",
+                  "Express.js",
+                  "Tailwind CSS",
+                  "Bootstrap",
                 ].map((s) => (
                   <span key={s} className="tech-badge">
                     {s}
                   </span>
                 ))}
+              </div>
+            </div>
+
+            <div>
+              <p className="font-medium mb-2 tracking-tight">
+                Familiar with...
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["JWT", "Google OAuth", "REST APIs", "MVC Architecture"].map(
+                  (s) => (
+                    <span key={s} className="tech-badge">
+                      {s}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           </div>

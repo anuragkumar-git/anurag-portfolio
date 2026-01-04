@@ -5,7 +5,7 @@ export default function Contact() {
     <>
       <section
         id="contact"
-        className="px-6 md:px-16 py-24 border-t border-muted/10"
+        className="px-6 md:px-16 py-24 border-muted/10"
       >
         <h2 className="text-2xl text-accent mb-6">Get in Touch</h2>
         <p className="text-muted max-w-xl mb-6">
