@@ -34,7 +34,7 @@ export default function ProjectModel({ project, onClose }) {
           className="bg-panel/80 max-w-2xl w-full rounded-lg p-6 relative max-h-[90vh] overflow-y-auto no-scrollbar"
           onClick={(e) => e.stopPropagation()}
         >
-          <button onClick={onClose} className="absolute top-4 right-4 text-xl">
+          <button  onClick={onClose} className="absolute top-4 right-4 text-xl">
             ✕
           </button>
 

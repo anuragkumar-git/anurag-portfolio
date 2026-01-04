@@ -19,8 +19,7 @@ export default function About() {
           {/* Summary */}
           <div>
             <p className="text-muted leading-relaxed">
-              A Computer Engineering Graduate (2025) learning backend
-              development with the MERN stack through hands-on projects.
+              Proficient in backend and frontend development with the MERN stack through hands-on projects.
               <br />
               Gained practical exposure to REST APIs, authentication, and
               database-driven applications through project- based learning.
