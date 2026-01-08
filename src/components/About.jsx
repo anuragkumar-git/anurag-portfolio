@@ -7,7 +7,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className={`px-6 md:px-16 py-24 reveal ${
+      className={`px-3 sm:px-6 md:px-16 pt-20 pb-26 reveal ${
         isVisible ? "reveal-visible" : ""
       }`}
     >

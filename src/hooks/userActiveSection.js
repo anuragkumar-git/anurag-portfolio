@@ -16,10 +16,10 @@ export default function userActiveSection(sectionIds) {
                         setActive(id)
                     }
                 },
-                { rootMargin: "-60% 0px -60% 0px" }
+                { rootMargin: "-400px 0px -480px 0px" }
             )
             observer.observe(el)
-            observers.push(observer)
+            observers.push(observer)            
         });
 
         return () => observers.forEach((obs) => obs.disconnect())

@@ -23,7 +23,7 @@ export default function Projects() {
       <section
         id="projects"
         ref={ref}
-        className={`px-6 md:px-16 py-24 reveal ${
+        className={`px-3 sm:px-6 md:px-16 pt-20 pb-26 reveal ${
           isVisible ? "reveal-visible" : ""
         }`}
       >
@@ -35,7 +35,7 @@ export default function Projects() {
             <div
               key={index}
               ref={(el)=>(cardRefs.current[index] = el)}
-              className="min-w-[85%] sm:min-w-[45%] lg:min-w-[25%] snap-start"
+              className="min-w-[86%] sm:min-w-[55%] md:min-w-[45%] lg:min-w-[35%] xl:min-w-[23%] 2xl:min-w-[18%] snap-start"
             >
               <ProjectCard
                 project={project}

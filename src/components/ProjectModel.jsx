@@ -27,7 +27,7 @@ export default function ProjectModel({ project, onClose }) {
   return (
     <>
       <div
-        className="fixed inset-0 z-0 backdrop-blur-sm flex  justify-center px-4"
+        className="fixed inset-0 z-0 backdrop-blur-sm flex justify-center px-3 sm:px-4"
         onClick={onClose}
       >
         <div

@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex flex-col justify-center px-6 md:px-16 overflow-hidden"
+      className="relative min-h-[90vh] flex flex-col justify-center px-3 sm:px-6 md:px-16 overflow-hidden"
     >
       <h1 className="text-4xl md:text-6xl font-bold leading-tight">
         Hello,
