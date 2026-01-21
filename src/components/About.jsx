@@ -19,7 +19,7 @@ export default function About() {
           {/* Summary */}
           <div>
             <p className="text-muted leading-relaxed">
-              Proficient in backend and frontend development with the MERN stack through hands-on projects.
+              Proficient in backend development with the MERN stack through hands-on projects.
               <br />
               Gained practical exposure to REST APIs, authentication, and
               database-driven applications through project- based learning.
@@ -34,7 +34,7 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-2">Education</h3>
             <p className="font-medium">B.E. in Computer Engineering</p>
             <p className="text-muted">
-              Shree Swaminarayan Institute of Technology, Gandhinagar
+              Gujarat Technological University, Gandhinagar
             </p>
             <p className="text-sm text-muted">2021 – 2025</p>
           </div>
@@ -50,7 +50,7 @@ export default function About() {
                 Languages & Tools
               </p>
               <div className="flex flex-wrap gap-2">
-                {["JavaScript", "Git", "Postman"].map((s) => (
+                {["JavaScript", "Git", "GitHub", "Postman"].map((s) => (
                   <span key={s} className="tech-badge">
                     {s}
                   </span>
@@ -82,7 +82,7 @@ export default function About() {
                 Familiar with...
               </p>
               <div className="flex flex-wrap gap-2">
-                {["JWT", "Google OAuth", "REST APIs", "MVC Architecture"].map(
+                {["JWT", "Google OAuth", "REST APIs", "Monolithic Architecture", "Cookies"].map(
                   (s) => (
                     <span key={s} className="tech-badge">
                       {s}
@@ -98,7 +98,7 @@ export default function About() {
       {/* Download Button */}
       <div className="mt-12">
         <a
-          href={`${import.meta.env.BASE_URL}AnuragCv.pdf`}
+          href={`${import.meta.env.BASE_URL}Resume-ANURAG.pdf`}
           download
           className="inline-block border border-accent px-6 py-2 rounded-md hover:bg-accent hover:text-black transition"
         >
