@@ -1,4 +1,5 @@
-export const projects = [{
+export const projects = [
+    {
     id: "NEXORA",
     title: "NEXORA",
     desc: "Deal discovery platform built with MERN stack",
@@ -15,4 +16,27 @@ export const projects = [{
         github: "https://github.com/anuragkumar-git/Code_NEXORA",
         // live: "https://tukku.live",
     },
-}]
+},
+    {
+    id: "FLUX",
+    title: "FLUX",
+    desc: "Offline First Time Tracking PWA",
+    fullDesc: "A modern, offline-first productivity timer built with React + Vite, Dexie. Designed for focused study and deep work sessions with clean architecture and scalable foundations.",
+    features: [
+        "⚡ Offline support (PWA)",
+        "💾 IndexedDB persistence using Dexie",
+        "⏱ Session-based time tracking",
+        "⏸ Pause & auto-terminate after 10 min inactivity",
+        "✏️ Inline session title editing",
+        "📅 Day-wise grouped history",
+        "📊 Daily total time calculation",
+        "📱 Mobile-first responsive UI",
+        "🌿 Modern emerald productivity theme",
+    ],
+    tech: ["react", "dexie", "indexeddb", "pwa", "tailwindcss", "vite", "javascript" ],
+    links: {
+        github: "https://github.com/anuragkumar-git/flux",
+        live: "https://anuragkumar-git.github.io/flux/",
+    },
+},
+]
