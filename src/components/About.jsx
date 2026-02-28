@@ -98,7 +98,7 @@ export default function About() {
       {/* Download Button */}
       <div className="mt-12">
         <a
-          href={`${import.meta.env.BASE_URL}Resume-ANURAG.pdf`}
+          href={`${import.meta.env.BASE_URL}Resume-Anurag.pdf`}
           download
           className="inline-block border border-accent px-6 py-2 rounded-md hover:bg-accent hover:text-black transition"
         >
