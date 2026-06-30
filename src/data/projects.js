@@ -39,4 +39,26 @@ export const projects = [
         live: "https://anuragkumar-git.github.io/flux/",
     },
 },
+    {
+    id: "TA",
+    title: "T.A. Diary",
+    desc: "TA-Diary is an offline-first Progressive Web App (PWA)",
+    fullDesc: "TA-Diary is designed to simplify the creation, management, previewing, sharing, and printing of Travel Allowance (T.A.) Diaries and Leave Diaries in Gujarati. The application helps employees maintain monthly travel and leave records in a structured format and generate official PDF reports matching the required government diary format.",
+    features: [
+        "⚡ Offline support",
+        "💾 IndexedDB persistence using Dexie",
+        "📗 Travel Diary Management",
+        "📘 Leave Diary Management",
+        "📄 PDF Generation",
+        "📲 PDF Sharing",
+        "👾 Progressive Web App",
+        "📱 Mobile-first responsive UI",
+        "🌿 Live Preview",
+    ],
+    tech: ["react", "dexie", "indexeddb", "pwa", "tailwindcss", "vite", "javascript", "Material UI (MUI)","Lucide React Icons"],
+    links: {
+        github: "https://github.com/anuragkumar-git/TA-Diary",
+        live: "https://ta-diary.vercel.app/",
+    },
+},
 ]
